@@ -1,10 +1,11 @@
 ![screenshot](https://raw.githubusercontent.com/ahmednooor/flat-calculator/master/screenshot.png)
 
-> **Flat Calculator** is a basic HTML, CSS and Javascript calculator.
+> **Flat Calculator** is a basic HTML, CSS and Javascript calculator with Flat Design And Keyboard Input Functionality.
 
 ## [Live Preview](http://ahmednooor.github.io/flat-calculator/)
 
 ## Features:
+
 > Basic Calculation.
 
 > Keyboard Support.
@@ -23,7 +24,7 @@
 
 > **dist** folder is for usage. It contains a single file to avoid hastle during usage.
 
-> **src** folder contains separate html css and javascript file for source code and further tweaking.
+> **src** folder contains separate html css and javascript files for source code and further tweaking.
 
 ## Usage Instructions for Keyboard:
 
