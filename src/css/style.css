@@ -1,0 +1,120 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #33cccc;
+}
+
+.formContainer {
+    display: block;
+    max-width: 320px;
+    margin: 30px auto 0 auto;
+    background-color: #eee;
+}
+
+.formContainer:after,
+.formContainer:before {
+    content: " ";
+    display: table;
+}
+
+.formContainer:after {
+    clear: both;
+}
+
+form {
+    width: 100%;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#display {
+    width: 100%;
+    min-height: 84px;
+    display: block;
+    padding: 0 15px;
+    text-align: right;
+    text-overflow: clip;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #444;
+    border: 0;
+    border-bottom: 10px solid #999;
+    border-top: 10px solid #999;
+}
+
+input[type="button"],
+#equal {
+    width: 80px;
+    height: 80px;
+    display: block;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #eee;
+    border: 0;
+    border-bottom: 1px solid #bbb;
+}
+
+input[type="button"]:hover,
+#equal:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+input[type="button"]:active,
+#equal:active {
+    cursor: pointer;
+    background-color: #bbb;
+}
+
+input:focus {
+    box-shadow: 0;
+    outline: 0;
+    background-color: #eee;
+}
+
+.linkReferesh {
+    display: block;
+    max-width: 320px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 30px auto;
+}
+
+@media screen and (max-width: 400px) {
+    .formContainer {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    input[type="button"]:hover,
+    #equal:hover {
+        background-color: #eee;
+    }
+    input[type="button"]:active,
+    #equal:active {
+        background-color: #bbb;
+    }
+}
