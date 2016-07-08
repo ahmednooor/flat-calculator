@@ -38,4 +38,4 @@
 
 ## License:
 
-> **MIT**
+> **[MIT](http://choosealicense.com/licenses/mit/)**
