@@ -16,9 +16,7 @@
 
 ## Browser Compatibility:
 
-> All of the latest desktop versions of **Chrome, Firefox\(partial\), Edge, IE11** and **Opera** are supported.
-
-> Keyboard Support not available on Firefox.
+> All of the latest desktop versions of **Chrome, Firefox, Edge, IE** and **Opera** are supported.
 
 ## Folder Structure:
 

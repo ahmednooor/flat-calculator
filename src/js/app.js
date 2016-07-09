@@ -53,25 +53,25 @@ function clearAll() {
 
 // for blocking alphabets into input field and helping calculation through keyboard keys
 function keyboardInput(key) {
-    if ((key.charCode < 40 || key.charCode > 57) && (key.charCode !== 13 && key.charCode !== 99)) {
+    if ((key.which < 0 || key.which > 57) && (key.which !== 13 && key.which !== 99)) {
         return false;
-    } else if (key.charCode === 42 || key.charCode === 47 || key.charCode === 43 || key.charCode === 45) {
+    } else if (key.which === 42 || key.which === 47 || key.which === 43 || key.which === 45) {
         key.preventDefault();
-        if (key.charCode === 42) {
+        if (key.which === 42) {
             display.value += "*";
-        } else if (key.charCode === 47) {
+        } else if (key.which === 47) {
             display.value += "/";
-        } else if (key.charCode === 43) {
+        } else if (key.which === 43) {
             display.value += "+";
-        } else if (key.charCode === 45) {
+        } else if (key.which === 45) {
             display.value += "-";
         }
         return true;
-    } else if (key.charCode === 13) {
+    } else if (key.which === 13) {
         key.preventDefault();
         displayResult();
         return true;
-    } else if (key.charCode === 99) {
+    } else if (key.which === 99) {
         key.preventDefault();
         clearAll();
         return true;
