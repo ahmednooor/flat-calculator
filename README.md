@@ -16,7 +16,7 @@
 
 ## Browser Compatibility:
 
-> All of the latest desktop versions of **Chrome, Firefox, Edge, IE** and **Opera** are supported.
+> All of the latest versions of **Chrome, Firefox, Edge, IE** and **Opera** are supported.
 
 ## Folder Structure:
 
