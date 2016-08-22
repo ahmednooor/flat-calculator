@@ -26,7 +26,7 @@
 
 ## Usage Instructions for Keyboard:
 
-> Just click in the display field and start calculating with your keyboard as you do on a desktop app.
+> Just use your keyboard as you do on a desktop calculator app.
 
 > Numeric keys for inputting values and period "." key for decimal point.
 

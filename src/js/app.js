@@ -40,6 +40,7 @@ function displayResult() {
     }
 }
 
+
 // for deleting(backspace) single value
 function deleteSingle() {
     backspaceValue = display.value;
@@ -55,9 +56,35 @@ function clearAll() {
 function keyboardInput(key) {
     if ((key.which < 0 || key.which > 57) && (key.which !== 13 && key.which !== 99)) {
         return false;
-    } else if (key.which === 42 || key.which === 47 || key.which === 43 || key.which === 45) {
+    } else {
         key.preventDefault();
-        if (key.which === 42) {
+        if (key.which === 48) {
+            display.value += "0";
+        } else if (key.which === 49) {
+            display.value += "1";
+        } else if (key.which === 50) {
+            display.value += "2";
+        } else if (key.which === 51) {
+            display.value += "3";
+        } else if (key.which === 52) {
+            display.value += "4";
+        } else if (key.which === 53) {
+            display.value += "5";
+        } else if (key.which === 54) {
+            display.value += "6";
+        } else if (key.which === 55) {
+            display.value += "7";
+        } else if (key.which === 56) {
+            display.value += "8";
+        } else if (key.which === 57) {
+            display.value += "9";
+        } else if (key.which === 46) {
+            display.value += ".";
+        } else if (key.which === 40) {
+            display.value += "(";
+        } else if (key.which === 41) {
+            display.value += ")";
+        } else if (key.which === 42) {
             display.value += "*";
         } else if (key.which === 47) {
             display.value += "/";
@@ -65,16 +92,21 @@ function keyboardInput(key) {
             display.value += "+";
         } else if (key.which === 45) {
             display.value += "-";
+        } else if (key.which === 13) {
+            displayResult();
+        } else if (key.which === 99) {
+            clearAll();
+        } else {
+            display.value = display.value;
         }
         return true;
-    } else if (key.which === 13) {
-        key.preventDefault();
-        displayResult();
-        return true;
-    } else if (key.which === 99) {
-        key.preventDefault();
-        clearAll();
-        return true;
+    }
+}
+
+// for deleting value using backspace
+function backspaceKeyEvent (event) {
+    if (event.which === 8) {
+        deleteSingle();
     }
 }
 
@@ -82,7 +114,10 @@ function keyboardInput(key) {
 window.onload = function () {
     // -- function calling and stuff:
     // for blocking alphabets into input field and helping calculation through keyboard keys
-    display.onkeypress = keyboardInput;
+    document.onkeypress = keyboardInput;
+    
+    // for deleting value using backspace
+    document.onkeydown = backspaceKeyEvent;
 
     // for data(numberic values) input
     for (i = 0; i < inputs.length; i++) {
